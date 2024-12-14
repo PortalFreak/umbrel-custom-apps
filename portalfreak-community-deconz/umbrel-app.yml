@@ -18,9 +18,6 @@ submission: https://hub.docker.com/r/deconzcommunity/deconz
 repo: https://hub.docker.com/r/deconzcommunity/deconz
 support: https://hub.docker.com/r/deconzcommunity/deconz
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
   Add what's new in the latest version of your app here.
 dependencies: []
