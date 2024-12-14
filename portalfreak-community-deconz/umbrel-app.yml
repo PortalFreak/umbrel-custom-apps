@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: portalfreak-community-deconz
 name: Community Deconz
-tagline: Replace this tagline with your app's tagline
+tagline: controls a ZigBee network using a Conbee USB
 icon: https://svgur.com/i/mvA.svg
 category: Home & Automation
 version: "1.0.0"
@@ -11,12 +11,12 @@ description: >-
 
   Conbee is supported on amd64, armhf/armv7, and aarch64/arm64 (i.e. RaspberryPi 2/3B/3B+, and other arm64 boards) architectures; RaspBee is supported on armhf/armv7 and aarch64/arm64 (and see the "Configuring Raspbian for RaspBee" section below for instructions to configure Raspbian to allow access to the RaspBee serial hardware).
 
-developer: Umbrel
+developer: Community
 website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+submitter: Community
+submission: https://hub.docker.com/r/deconzcommunity/deconz
+repo: https://hub.docker.com/r/deconzcommunity/deconz
+support: https://hub.docker.com/r/deconzcommunity/deconz
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
