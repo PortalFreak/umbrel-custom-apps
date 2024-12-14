@@ -3,7 +3,7 @@ services:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: portalfreak-community-deconz_deconz_1
-      APP_PORT: 8080
+      APP_PORT: 8083
 
   server:
     image: deconzcommunity/deconz
