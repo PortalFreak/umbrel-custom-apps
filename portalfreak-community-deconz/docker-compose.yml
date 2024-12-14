@@ -1,11 +1,5 @@
 services:
-  app_proxy:
-    environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: portalfreak-community-deconz_deconz_1
-      APP_PORT: 8083
-
-  server:
+  deconz:
     image: deconzcommunity/deconz
     container_name: deconz
     user: "1000:1000"
