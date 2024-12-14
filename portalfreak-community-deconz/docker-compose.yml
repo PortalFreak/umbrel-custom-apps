@@ -8,7 +8,7 @@ services:
       - "8443:443"
       - "5900:5900"
     volumes:
-      - /home/umbrel/umbrel/app-data/portalfreak-community-deconz
+      - /home/umbrel/umbrel/app-data/portalfreak-community-deconz/data:/root/.local/share/dresden-elektronik/deCONZ
     restart: always
     network_mode: host
     privileged: true
