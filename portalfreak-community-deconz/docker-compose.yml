@@ -1,14 +1,19 @@
-version: "3.7"
+version: '3.7'
 
 services:
-
-  app_proxy:
+  deconz:
+    image: deconzcommunity/deconz
+    container_name: deconz
+    ports:
+      - "8080:80"
+      - "8443:443"
+      - "5900:5900"
+    volumes:
+      - /opt/deconz:/root/.local/share/dresden-elektronik/deCONZ
+    restart: always
+    network_mode: host
+    privileged: true
     environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: sparkles-hello-world_server_1
-      APP_PORT: 3000
-    
-  server:
-    image: getumbrel/community-app-store-hello-world:latest
-    user: "1000:1000"
-    init: true
+      - TZ=Etc/UTC
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
