@@ -1,9 +1,21 @@
+version: '3.7'
+
 services:
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: portalfreak-community-deconz_deconz_1
+      APP_PORT: 8080
+
   deconz:
     image: deconzcommunity/deconz
     container_name: deconz
     user: "1000:1000"
     init: true
+    ports:
+      - "8080:80"
+      - "8443:443"
+      - "5900:5900"
     volumes:
       - /home/umbrel/umbrel/app-data/portalfreak-community-deconz/data/:/root/.local/share/dresden-elektronik/deCONZ
     restart: always
