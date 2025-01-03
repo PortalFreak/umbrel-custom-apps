@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: portalfreak-influx-db
+name: Influx DB
+tagline: InfluxDB is the open source time series database built for real-time analytic workloads.
+icon: https://imgur.com/a/6smDnPu
+category: Developer Tools
+version: "1.0.0"
+port: 8086
+description: >-
+InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
+developer: InfluxData
+website: https://github.com/influxdata/influxdata-docker
+submitter: Portalfreak
+submission: https://github.com/influxdata/influxdata-docker
+repo: https://github.com/influxdata/influxdata-docker
+support: https://github.com/influxdata/influxdata-docker
+gallery:
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
