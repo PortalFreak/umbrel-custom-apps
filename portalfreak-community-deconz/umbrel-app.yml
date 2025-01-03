@@ -11,7 +11,7 @@ description: >-
 
   Conbee is supported on amd64, armhf/armv7, and aarch64/arm64 (i.e. RaspberryPi 2/3B/3B+, and other arm64 boards) architectures; RaspBee is supported on armhf/armv7 and aarch64/arm64 (and see the "Configuring Raspbian for RaspBee" section below for instructions to configure Raspbian to allow access to the RaspBee serial hardware).
 
-developer: Dresdeb Elektronik
+developer: Dresden Elektronik
 website: https://www.dresden-elektronik.de/
 submitter: Community
 submission: https://hub.docker.com/r/deconzcommunity/deconz
