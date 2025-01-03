@@ -7,7 +7,7 @@ category: Developer Tools
 version: "1.0.0"
 port: 8086
 description: >-
-InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
+  InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
 developer: InfluxData
 website: https://github.com/influxdata/influxdata-docker
 submitter: Portalfreak
