@@ -2,7 +2,7 @@ manifestVersion: 1
 id: portalfreak-influx-db
 name: Influx DB
 tagline: InfluxDB is the open source time series database built for real-time analytic workloads.
-icon: https://imgur.com/a/6smDnPu
+icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-influx-db/resources/influxdb-icon.jpeg?raw=true
 category: Developer Tools
 version: "1.0.0"
 port: 8086
