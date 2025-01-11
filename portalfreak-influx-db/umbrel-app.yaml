@@ -15,6 +15,7 @@ submission: https://github.com/influxdata/influxdata-docker
 repo: https://github.com/influxdata/influxdata-docker
 support: https://github.com/influxdata/influxdata-docker
 gallery:
+  - https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-influx-db/resources/influxdb-logo.jpeg?raw=true
 releaseNotes: >-
   Add what's new in the latest version of your app here.
 dependencies: []
