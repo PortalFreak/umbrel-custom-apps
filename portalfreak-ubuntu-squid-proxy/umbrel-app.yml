@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: portalfreak-ubuntu-squid-proxy
+name: Squid Proxy
+tagline: controls a ZigBee network using a Conbee USB
+icon: https://imgur.com/sevawna
+category: Home & Automation
+version: "1.0.0"
+port: 8080
+description: >-
+  This Docker image containerizes the deCONZ software from Dresden Elektronik, which controls a ZigBee network using a Conbee USB or RaspBee GPIO serial interface. This image runs deCONZ in "minimal" mode, for control of the ZigBee network via the WebUIs ("Wireless Light Control" and "Phoscon") and over the REST API and Websockets, and optionally runs a VNC server for viewing and interacting with the ZigBee mesh through the deCONZ UI.
+
+  Conbee is supported on amd64, armhf/armv7, and aarch64/arm64 (i.e. RaspberryPi 2/3B/3B+, and other arm64 boards) architectures; RaspBee is supported on armhf/armv7 and aarch64/arm64 (and see the "Configuring Raspbian for RaspBee" section below for instructions to configure Raspbian to allow access to the RaspBee serial hardware).
+
+developer: Dresdeb Elektronik
+website: https://www.dresden-elektronik.de/
+submitter: Community
+submission: https://hub.docker.com/r/deconzcommunity/deconz
+repo: https://hub.docker.com/r/deconzcommunity/deconz
+support: https://hub.docker.com/r/deconzcommunity/deconz
+gallery:
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
