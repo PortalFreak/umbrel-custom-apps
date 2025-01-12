@@ -3,17 +3,17 @@ id: portalfreak-driveone-onedrive
 name: driveone/onedrive
 tagline: Docker container to sync Microsoft OneDrive (Personal, Business, Office365 & Sharepoint)
 icon: https://imgur.com/sevawna
-category: Home & Automation
+category: Files & Productivity
 version: "1.0.0"
-port: 8080
+port: 8086
 description: >-
 sync to onedrive for linux
-developer: Dresdeb Elektronik
-website: https://www.dresden-elektronik.de/
+developer: Microsoft 
+website: https://hub.docker.com/u/driveone
 submitter: Community
-submission: https://hub.docker.com/r/deconzcommunity/deconz
-repo: https://hub.docker.com/r/deconzcommunity/deconz
-support: https://hub.docker.com/r/deconzcommunity/deconz
+submission: https://hub.docker.com/u/driveone
+repo: https://hub.docker.com/u/driveone
+support: https://hub.docker.com/u/driveone
 gallery:
 releaseNotes: >-
   Add what's new in the latest version of your app here.
