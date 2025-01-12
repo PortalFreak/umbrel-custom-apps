@@ -6,6 +6,7 @@ services:
       - "8086:8086"
     volumes:
       - ${APP_DATA_DIR}/data/config:/etc/onedrive
+      - ${APP_DATA_DIR}/data/logs:/var/log/onedrive
       - ${UMBREL_ROOT}/data/storage/onedrive:/var/lib/onedrive
     environment:
       - ONEDRIVE_UID=1000
