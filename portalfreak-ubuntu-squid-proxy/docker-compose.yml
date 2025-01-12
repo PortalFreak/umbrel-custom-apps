@@ -5,16 +5,16 @@ services:
       APP_HOST: portalfreak-ubuntu-squid-proxy_1
     container_name: portalfreak-ubuntu-squid-proxy_app_proxy_1
   server:
-   image: homeassistant/home-assistant:2025.1.1@sha256:dda88779889b09d5465b8bf0c69ba2a62f81b01ee74d943ebe31e3474ea7cbea
    network_mode: host
    privileged: true
+   user: "1000:1000"
+   init: true
 
   squid:
     image: ubuntu/squid:latest
     container_name: squid
     ports:
       - '3128:3128'
-    privileged: true
     volumes:
       - ${APP_DATA_DIR}/data/logs:/var/log/squid
       - ${APP_DATA_DIR}/data:/var/spool/squid
