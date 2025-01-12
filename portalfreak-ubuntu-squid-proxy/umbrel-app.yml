@@ -2,7 +2,7 @@ manifestVersion: 1
 id: portalfreak-ubuntu-squid-proxy
 name: Squid Proxy
 tagline: Squid is a caching proxy for the Web. Long-term versions maintained by Canonical.
-icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-ubuntu-squid-proxy/rersources/squid-logo.png?raw=true
+icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-ubuntu-squid-proxy/rersources/squid-proxy-icon.jpg?raw=true
 category: Networking
 version: "1.0.0"
 port: 3128
@@ -15,6 +15,8 @@ submission: https://hub.docker.com/r/ubuntu/squid
 repo: https://hub.docker.com/r/ubuntu/squid
 support: https://hub.docker.com/r/ubuntu/squid
 gallery:
+  - https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-ubuntu-squid-proxy/rersources/squid-proxy-logo.jpg?raw=true
+  - https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-ubuntu-squid-proxy/rersources/squid-proxy-ubuntu.jpg?raw=true
 releaseNotes: >-
   https://hub.docker.com/r/ubuntu/squid
 dependencies: []
