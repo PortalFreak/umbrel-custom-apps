@@ -1,0 +1,24 @@
+version: '3.7'
+services:
+  app_proxy:
+    environment:
+      APP_HOST: portalfreak-ubuntu-squid-proxy_1
+      APP_PORT: 3128
+    container_name: portalfreak-ubuntu-squid-proxy_app_proxy_1
+    privileged: true
+
+  squid:
+    image: ubuntu/squid:latest
+    container_name: squid
+    ports:
+      - '3128:3128'
+    privileged: true
+    volumes:
+      - ${APP_DATA_DIR}/data/logs:/var/log/squid
+      - ${APP_DATA_DIR}/data:/var/spool/squid
+      - ${APP_DATA_DIR}/data/config:/etc/squid/config
+      - ${APP_DATA_DIR}/data/snippet:/etc/squid/conf.d/snippet.conf
+    environment:
+      PUID: 1000
+      PGID: 1000
+    restart: on-failure
