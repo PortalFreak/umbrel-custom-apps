@@ -15,8 +15,8 @@ submission: https://hub.docker.com/r/ubuntu/squid
 repo: https://hub.docker.com/r/ubuntu/squid
 support: https://hub.docker.com/r/ubuntu/squid
 gallery:
-  - https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-ubuntu-squid-proxy/rersources/squid-proxy-logo.jpg?raw=true
-  - https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-ubuntu-squid-proxy/rersources/squid-proxy-ubuntu.jpg?raw=true
+- https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-ubuntu-squid-proxy/rersources/squid-proxy-logo.jpg?raw=true
+- https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-ubuntu-squid-proxy/rersources/squid-proxy-ubuntu.jpg?raw=true
 releaseNotes: >-
   https://hub.docker.com/r/ubuntu/squid
 dependencies: []
