@@ -21,7 +21,7 @@ gallery:
   - https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-community-deconz/resources/deconz_logon.jpeg?raw=true
   - https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-community-deconz/resources/deconz_hub.jpg?raw=true
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  https://hub.docker.com/r/deconzcommunity/deconz
 dependencies: []
 path: ""
 defaultUsername: ""
