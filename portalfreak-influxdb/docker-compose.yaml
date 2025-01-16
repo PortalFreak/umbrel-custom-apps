@@ -4,7 +4,7 @@ services:
 app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: portalfreak-influxdb_server_1
+      APP_HOST: portalfreak-influxdb_1
       APP_PORT: 8087
     container_name: portalfreak-influxdb_app_proxy_1
 server:
@@ -12,5 +12,6 @@ server:
   volumes:
     - ${APP_DATA_DIR}/data:/var/lib/influxdb
     - ${APP_DATA_DIR}/config:/etc/influxdb
+  container_name: portalfreak-influxdb_1
 
 
