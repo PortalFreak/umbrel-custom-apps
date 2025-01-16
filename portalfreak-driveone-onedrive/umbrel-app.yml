@@ -1,9 +1,8 @@
 manifestVersion: 1
 id: portalfreak-driveone-onedrive
 name: driveone/onedrive
-tagline: Docker container to sync Microsoft OneDrive (Personal, Business,
-  Office365 & Sharepoint)
-icon: https://imgur.com/sevawna
+tagline: Docker container to sync Microsoft OneDrive (Personal, Business, Office365 & Sharepoint)
+icon:
 category: Files & Productivity
 version: 1.0.0
 port: 8086
