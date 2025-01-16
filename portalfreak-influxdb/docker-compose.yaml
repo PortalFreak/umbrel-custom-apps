@@ -9,6 +9,7 @@ app_proxy:
     container_name: portalfreak-influxdb_app_proxy_1
 server:
   image: influxdb:latest
+  user: "1000:1000"
   volumes:
     - ${APP_DATA_DIR}/data:/var/lib/influxdb
     - ${APP_DATA_DIR}/config:/etc/influxdb
