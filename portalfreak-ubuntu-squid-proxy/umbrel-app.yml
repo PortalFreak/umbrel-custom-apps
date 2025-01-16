@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: portalfreak-ubuntu-squid-proxy
-name: Memcached
+name: Squid Proxy
 tagline: Free & open source, high-performance, distributed memory object caching system.
 icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-memcached/resources/memcached-icon.jpg?raw=true
 category: Networking
