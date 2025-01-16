@@ -5,7 +5,7 @@ tagline: Free & open source, high-performance, distributed memory object caching
 icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-memcached/resources/memcached-icon.jpg?raw=true
 category: Networking
 version: 1.0.0
-port: null
+port: 3128
 description: Memcached is a general-purpose distributed memory caching system. It is often used to speed up dynamic database-driven websites by caching data and objects in RAM to reduce the number of times an external data source (such as a database or API) must be read.
 developer: https://hub.docker.com/_/memcached
 website: https://hub.docker.com/_/memcached
