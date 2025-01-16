@@ -16,7 +16,7 @@ submission: https://hub.docker.com/r/deconzcommunity/deconz
 repo: https://hub.docker.com/r/deconzcommunity/deconz
 support: https://hub.docker.com/r/deconzcommunity/deconz
 gallery:
-- https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-community-deconz/resources/deconz_logon.jpeg?raw=true
+- https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-community-deconz/resources/deconz_logon.jpg?raw=true
 - https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-community-deconz/resources/deconz_hub.jpg?raw=true
 releaseNotes: >-
   https://hub.docker.com/r/deconzcommunity/deconz
