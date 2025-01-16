@@ -13,7 +13,8 @@ submitter: Community
 submission: https://hub.docker.com/u/driveone
 repo: https://hub.docker.com/u/driveone
 support: https://hub.docker.com/u/driveone
-gallery: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-driveone-onedrive/resources/memcached-icon.jpg?raw=true
+gallery:
+- https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-driveone-onedrive/resources/memcached-icon.jpg?raw=true
 releaseNotes: Add what's new in the latest version of your app here.
 dependencies: []
 path: ""
