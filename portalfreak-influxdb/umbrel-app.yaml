@@ -5,7 +5,7 @@ tagline: InfluxDB is the open source time series database built for real-time an
 icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-influx-db/resources/influxdb-icon.jpeg?raw=true
 category: Developer Tools
 version: "1.0.0"
-port: 8087
+port: 4000
 description: >-
   InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
 developer: InfluxData
