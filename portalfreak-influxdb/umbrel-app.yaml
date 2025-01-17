@@ -1,21 +1,27 @@
 manifestVersion: 1
 id: portalfreak-influxdb
 name: Influx DB
-tagline: InfluxDB is the open source time series database built for real-time analytic workloads.
-icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-influx-db/resources/influxdb-icon.jpeg?raw=true
-category: Developer Tools
+tagline: Replace this tagline with your app's tagline
+icon: https://svgur.com/i/mvA.svg
+category: Development
 version: "1.0.0"
 port: 4000
 description: >-
-  InfluxDB is the time series data platform designed to handle high write and query workloads. Using InfluxDB, you can collect, store, and process large amounts of timestamped data, including metrics and events for use cases such as DevOps monitoring, application metrics, IoT sensors, and event monitoring.
-developer: InfluxData
-website: https://github.com/influxdata/influxdata-docker
-submitter: Portalfreak
-submission: https://github.com/influxdata/influxdata-docker
-repo: https://github.com/influxdata/influxdata-docker
-support: https://github.com/influxdata/influxdata-docker
+  Add your app's description here.
+
+
+  You can also add newlines!
+
+developer: Umbrel
+website: https://umbrel.com
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
 gallery:
-- https://github.com/PortalFreak/umbrel-custom-apps/blob/master/portalfreak-influx-db/resources/influxdb-logo.jpeg?raw=true
+- https://i.imgur.com/yyVG0Jb.jpeg
+- https://i.imgur.com/yyVG0Jb.jpeg
+- https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
   Add what's new in the latest version of your app here.
 dependencies: []
