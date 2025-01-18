@@ -6,7 +6,6 @@ services:
       APP_PORT: 3128
   server:
     image: elestio/squid:${SOFTWARE_VERSION_TAG}
-    hostname: pf-squid-proxy_server_1
     volumes:
       - ${APP_DATA_DIR}/data/logs:/var/log/squid
       - ${APP_DATA_DIR}/data:/var/spool/squid
