@@ -10,7 +10,6 @@ services:
     
   server:
     image: influxdb:latest
-    user: "1000:1000"
     volumes:
     - ${APP_DATA_DIR}/data:/var/lib/influxdb2
     - ${APP_DATA_DIR}/config:/etc/influxdb2
