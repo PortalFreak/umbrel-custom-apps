@@ -14,3 +14,4 @@ services:
     volumes:
     - ${APP_DATA_DIR}/data:/var/lib/influxdb2
     - ${APP_DATA_DIR}/config:/etc/influxdb2
+    - ${APP_DATA_DIR}/engine:/var/lib/influxdb2/engine
