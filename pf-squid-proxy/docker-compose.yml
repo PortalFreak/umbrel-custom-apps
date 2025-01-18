@@ -8,12 +8,16 @@ services:
 
   server:
     image: elestio/squid:${SOFTWARE_VERSION_TAG}
-    hostname: $DEVICE_DOMAIN_NAME
+    hostname: pf-squid-proxy_server_1
 
     volumes:
       - ${APP_DATA_DIR}/data/logs:/var/log/squid
       - ${APP_DATA_DIR}/data:/var/spool/squid
       - ${APP_DATA_DIR}/data/config:/etc/squid/config
       - ${APP_DATA_DIR}/data/snippet:/etc/squid/conf.d/snippet.conf
+    environment:
+      PUID: 1000
+      PGID: 1000
+
     restart: on-failure
 
