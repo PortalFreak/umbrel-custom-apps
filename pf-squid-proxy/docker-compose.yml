@@ -1,9 +1,11 @@
 version: "3.7"
+
 services:
   app_proxy:
     environment:
       APP_HOST: pf-squid-proxy_server_1
       APP_PORT: 3128
+      
   server:
     image: elestio/squid:${SOFTWARE_VERSION_TAG}
     volumes:
