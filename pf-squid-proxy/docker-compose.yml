@@ -5,6 +5,8 @@ services:
     environment:
       APP_HOST: pf-squid-proxy_web_1
       APP_PORT: 3128
+    networks:
+      - squid_network
 
   server:
     image: ubuntu/squid:latest
@@ -17,5 +19,15 @@ services:
     environment:
       PUID: 1000
       PGID: 1000
-
     restart: on-failure
+    networks:
+      - squid_network
+
+networks:
+  squid_network:
+    driver: bridge
+    enable_ipv6: true
+    ipam:
+      driver: default
+      config:
+        - subnet: "2001:db8:1::/64"
