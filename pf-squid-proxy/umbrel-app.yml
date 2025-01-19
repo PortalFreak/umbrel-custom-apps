@@ -2,14 +2,11 @@ manifestVersion: 1
 id: pf-squid-proxy
 name: Squid Proxy
 tagline: Free & open source, high-performance, distributed memory object caching system.
-icon: 
+icon:
 category: Networking
 version: 1.0.0
-port: 3128
-description: Memcached is a general-purpose distributed memory caching system.
-  It is often used to speed up dynamic database-driven websites by caching data
-  and objects in RAM to reduce the number of times an external data source (such
-  as a database or API) must be read.
+port: 3129
+description: Memcached is a general-purpose distributed memory caching system. It is often used to speed up dynamic database-driven websites by caching data and objects in RAM to reduce the number of times an external data source (such as a database or API) must be read.
 developer: https://hub.docker.com/_/memcached
 website: https://hub.docker.com/_/memcached
 submitter: Community
