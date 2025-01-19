@@ -1,5 +1,3 @@
-version: '3.7'
-
 services:
   app_proxy:
     environment:
@@ -14,42 +12,10 @@ services:
     ports:
       - '3128:3128'
     volumes:
-      - type: bind
-        source: ${APP_DATA_DIR}/data/logs
-        target: /var/log/squid
-        bind:
-          create_host_path: true
-          propagation: rprivate
-          mode: "0755"
-          owner: "umbrel"
-          group: "umbrel"
-      - type: bind
-        source: ${APP_DATA_DIR}/data
-        target: /var/spool/squid
-        bind:
-          create_host_path: true
-          propagation: rprivate
-          mode: "0755"
-          owner: "umbrel"
-          group: "umbrel"
-      - type: bind
-        source: ${APP_DATA_DIR}/data/config
-        target: /etc/squid/config.conf
-        bind:
-          create_host_path: true
-          propagation: rprivate
-          mode: "0755"
-          owner: "umbrel"
-          group: "umbrel"
-      - type: bind
-        source: ${APP_DATA_DIR}/data/snippet
-        target: /etc/squid/conf.d/snippet.conf
-        bind:
-          create_host_path: true
-          propagation: rprivate
-          mode: "0755"
-          owner: "umbrel"
-          group: "umbrel"
+      - ${APP_DATA_DIR}/data/logs:/var/log/squid
+      - ${APP_DATA_DIR}/data:/var/spool/squid
+      - ${APP_DATA_DIR}/data/config:/etc/squid/config.conf
+      - ${APP_DATA_DIR}/data/snippet:/etc/squid/conf.d/snippet.conf
     environment:
       PUID: 1000
       PGID: 1000
@@ -63,3 +29,8 @@ services:
       - NET_RAW
     restart: on-failure
     container_name: pf-squid-proxy_docker-host_1
+
+networks:
+  default:
+    external:
+      name: squid_network
