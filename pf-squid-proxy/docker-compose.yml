@@ -29,8 +29,3 @@ services:
       - NET_RAW
     restart: on-failure
     container_name: pf-squid-proxy_docker-host_1
-
-networks:
-  default:
-    external: true
-    name: squid_network
