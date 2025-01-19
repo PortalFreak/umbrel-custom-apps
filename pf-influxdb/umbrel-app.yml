@@ -2,7 +2,7 @@ manifestVersion: 1
 id: pf-influxdb
 name: Influx DB
 tagline: InfluxDB is the open source time series database built for real-time analytic workloads.
-icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-influxdb/resources/influxdb-icon.png?raw=true
+icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-influxdb/resources/influxdb-icon.svg?raw=true
 category: Development
 version: "1.0.0"
 port: 4005
