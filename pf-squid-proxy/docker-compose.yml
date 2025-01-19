@@ -9,6 +9,7 @@ services:
   server:
     image: ubuntu/squid:latest
     hostname: $DEVICE_DOMAIN_NAME
+    network_mode: host
     volumes:
       - ${APP_DATA_DIR}/data/logs:/var/log/squid
       - ${APP_DATA_DIR}/data:/var/spool/squid
@@ -17,5 +18,7 @@ services:
     environment:
       PUID: 1000
       PGID: 1000
+    cap_add:
+      - NET_ADMIN
 
     restart: on-failure
