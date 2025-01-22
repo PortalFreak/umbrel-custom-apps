@@ -7,13 +7,14 @@ services:
       APP_PORT: 8080
 
   web:
-    image: deconzcommunity/deconz:2.29.1@sha256:38f23c5a507542bbd6eac0492bf6456be2004015594ca270a1a5998c8a377b74
+    image: deconzcommunity/deconz
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
     ports:
       - 8080:80
-      - 443:443
+      - 8443:443
+      - 5900:5900
     volumes:
       - ${APP_DATA_DIR}/data:/opt/deCONZ
       - ${APP_DATA_DIR}/otau:/opt/deCONZ/otau
