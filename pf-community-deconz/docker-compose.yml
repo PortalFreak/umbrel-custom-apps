@@ -8,16 +8,19 @@ services:
 
   server:
     image: deconzcommunity/deconz
-    user: "1000:1000"
     privileged: true
     ports:
+      - "8080:80"
       - "8443:443"
       - "5900:5900"
     volumes:
       - ${APP_DATA_DIR}/data:/root/.local/share/dresden-elektronik/deCONZ
+      - ${APP_DATA_DIR}/data:/etc/localtime
     restart: on-failure
     network_mode: host
     environment:
       - TZ=Etc/UTC
+      - DECONZ_UID=0
+      - DECONZ_GID=0
     devices:
       - "/dev/ttyUSB0:/dev/ttyUSB0"
