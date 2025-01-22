@@ -4,13 +4,12 @@ services:
   app_proxy:
     environment:
       APP_HOST: deconz_web_1
-      APP_PORT: 8080
+      APP_PORT: 8081
 
   web:
     image: deconzcommunity/deconz
     user: "1000:1000"
     restart: on-failure
-    stop_grace_period: 1m
     ports:
       - 8080:80
       - 8443:443
