@@ -8,6 +8,8 @@ services:
 
   server:
     image: deconzcommunity/deconz
+    user: "1000:1000"
+    privileged: true
     ports:
       - "8080:80"
       - "8443:443"
