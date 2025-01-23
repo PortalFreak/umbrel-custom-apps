@@ -6,21 +6,13 @@ services:
     container_name: deconz
     restart: on-failure
     privileged: true
+    network_mode: host
     ports:
       - "8081:80"
       - "8443:443"
     volumes:
-      - ${APP_DATA_DIR}/data:/data
+      - ${APP_DATA_DIR}/data:/root/.local/share/dresden-elektronik/deCONZ
     devices:
-      - /dev/ttyACM0 # USB device for Conbee II
+      - "/dev/ttyUSB0:/dev/ttyUSB0" # USB device for Conbee II
     environment:
-      TZ: Europe/Berlin
-      DECONZ_WEB_PORT: 80
-      DECONZ_WS_PORT: 443
-      DEBUG_INFO: 1
-      DEBUG_APS: 0
-      DEBUG_ZCL: 0
-      DEBUG_ZDP: 0
-      DEBUG_OTA: 0
-      DECONZ_DEVICE: /dev/ttyACM0
-      DECONZ_START_VERBOSE: 0
+      - TZ=Etc/UTC
