@@ -1,39 +1,26 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: deconz_web_1
-      APP_PORT: 4001
-
-  web:
-    image: deconzcommunity/deconz
-    user: "1000:1000"
+  deconz:
+    image: deconzcommunity/deconz:stable
+    container_name: deconz
     restart: on-failure
+    privileged: true
     ports:
-      - 8081:80
-      - 8443:443
-      - 5900:5900
+      - "8081:80"
+      - "443:443"
     volumes:
-      - ${APP_DATA_DIR}/data:/opt/deCONZ
-      - ${APP_DATA_DIR}/otau:/opt/deCONZ/otau
-      - /etc/localtime:/etc/localtime:ro
+      - ${APP_DATA_DIR}/data:/data
+    devices:
+      - /dev/ttyACM0 # USB device for Conbee II
     environment:
-      DECONZ_UID: 1000
-      DECONZ_GID: 1000
-      DECONZ_VNC_MODE: "0"
-      DECONZ_VNC_PORT: 5900
-      DECONZ_VNC_PASSWORD: ""
-      DECONZ_DEVICE: "/dev/ttyUSB0"
+      TZ: Europe/Berlin
       DECONZ_WEB_PORT: 80
       DECONZ_WS_PORT: 443
-      DECONZ_DEBUG_INFO: "1"
-      DECONZ_DEBUG_APS: "0"
-      DECONZ_DEBUG_ZCL: "0"
-      DECONZ_DEBUG_DDF: "0"
-      DECONZ_DEBUG_DEV: "0"
-      DECONZ_DEBUG_ZDP: "0"
-      DECONZ_DEBUG_OTA: "0"
-      DECONZ_DEBUG_ERROR: "0"
-      DECONZ_DEBUG_HTTP: "0"
-      DECONZ_DEV_TEST_MANAGED: "0"
+      DEBUG_INFO: 1
+      DEBUG_APS: 0
+      DEBUG_ZCL: 0
+      DEBUG_ZDP: 0
+      DEBUG_OTA: 0
+      DECONZ_DEVICE: /dev/ttyACM0
+      DECONZ_START_VERBOSE: 0
