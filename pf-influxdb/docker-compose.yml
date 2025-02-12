@@ -6,6 +6,5 @@ services:
       PROXY_AUTH_ADD: false
   web:
     image: influxdb:1.11.8
-    container_name: pf-influxdb_server_1
     volumes:
       - ${APP_DATA_DIR}/data:/var/lib/influxdb
