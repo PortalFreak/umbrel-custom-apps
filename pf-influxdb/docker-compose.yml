@@ -11,6 +11,5 @@ services:
     container_name: pf-influxdb_server_1
     volumes:
       - ${APP_DATA_DIR}/data:/var/lib/influxdb
-      - ${APP_DATA_DIR}/config:/etc/influxdb
     ports:
       - "8086:8086"
