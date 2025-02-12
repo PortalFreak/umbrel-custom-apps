@@ -1,5 +1,4 @@
 services:
-
   app_proxy:
     environment: 
     # The format here is: <app-id>_<docker-service-name>_1
