@@ -5,13 +5,10 @@ services:
       APP_HOST: pf-influxdb_server_1
       APP_PORT: 8086
     ports:
-      - "4000:4000" # Beispielport, auf dem der Proxy lauscht
-    depends_on:
-      - server
+      - "8086:8086"
   
   server:
     image: influxdb:1.11.8
-    container_name: pf-influxdb_server_1
     volumes:
       - ${APP_DATA_DIR}/data:/var/lib/influxdb
       - ${APP_DATA_DIR}/config:/etc/influxdb
