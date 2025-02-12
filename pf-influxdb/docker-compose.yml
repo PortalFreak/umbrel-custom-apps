@@ -3,8 +3,8 @@ services:
     environment:
       APP_HOST: pf-influxdb_server_1
       APP_PORT: 8086
-      PROXY_AUTH_ADD: false
-  web:
+      PROXY_AUTH_ADD: "false"
+  db:
     image: influxdb:1.11.8
     volumes:
       - ${APP_DATA_DIR}/data:/var/lib/influxdb
