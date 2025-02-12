@@ -12,7 +12,5 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/var/lib/influxdb
       - ${APP_DATA_DIR}/config:/etc/influxdb
-    ports:
-      - "8086:8086"
 
 
