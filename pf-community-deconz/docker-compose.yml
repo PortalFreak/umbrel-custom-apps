@@ -7,12 +7,11 @@ services:
     restart: on-failure
     privileged: true
     network_mode: host
-    ports:
-      - "8081:80"
-      - "8443:443"
     volumes:
-      - ${APP_DATA_DIR}/data:/root/.local/share/dresden-elektronik/deCONZ
+      - ${APP_DATA_DIR}/deconz-data:/root/.local/share/dresden-elektronik/deCONZ
     devices:
-      - "/dev/ttyUSB0:/dev/ttyUSB0" # USB device for Conbee II
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
     environment:
-      - TZ=Etc/UTC
+      - TZ=Europe/Berlin
+      - PUID=1000
+      - PGID=1000
