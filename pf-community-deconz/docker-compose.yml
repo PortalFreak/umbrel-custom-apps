@@ -4,7 +4,7 @@ services:
   deconz:
     image: deconzcommunity/deconz:stable
     container_name: deconz
-    restart: on-failure
+    restart: unless-stopped
     privileged: true
     network_mode: host
     volumes:
