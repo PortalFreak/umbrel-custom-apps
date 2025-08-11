@@ -1,14 +1,13 @@
-version: '3.8'
+version: "3"
 services:
   onedrive:
-    image: driveone/onedrive:latest
+    image: driveone/onedrive:edge
     container_name: onedrive
     restart: unless-stopped
-    volumes:
-      - ${APP_DATA_DIR}/onedrive-config:/onedrive/conf
-      - ${APP_DATA_DIR}/onedrive-data:/onedrive/data
     environment:
-      - ONEDRIVE_UID=1000
-      - ONEDRIVE_GID=1000
-      - ONEDRIVE_SYNC_DIR=/onedrive/data
-    command: --synchronize --verbose
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/onedrive_conf:/onedrive/conf
+      - ${UMBREL_ROOT}/home/Documents:/onedrive/data
+
