@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  onedrive:
+    image: driveone/onedrive:latest
+    container_name: onedrive
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA_DIR}/onedrive-config:/onedrive/conf
+      - ${APP_DATA_DIR}/onedrive-data:/onedrive/data
+    environment:
+      - ONEDRIVE_UID=1000
+      - ONEDRIVE_GID=1000
+      - ONEDRIVE_SYNC_DIR=/onedrive/data
+    command: --synchronize --verbose
