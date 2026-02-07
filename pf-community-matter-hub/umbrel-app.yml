@@ -1,14 +1,14 @@
 manifestVersion: 1
 id: pf-community-matter-hub
 name: Home Assistant Matter Hub
-tagline: Matter Bridge für Home Assistant
-icon: https://raw.githubusercontent.com/t0bst4r/home-assistant-matter-hub/main/docs/icon.png
+tagline: Matter Bridge fÃ¼r Home Assistant
+icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-community-matter-hub/resources/deconz_icon.jpeg?raw=true
 category: Home & Automation
 version: "1.0.0"
 port: 8482
 description: >-
-  Der Home Assistant Matter Hub ermöglicht es, Matter-Geräte über Home Assistant zu steuern.
-  Die App nutzt die offizielle Docker-Implementierung und benötigt IPv6 sowie korrektes mDNS-Routing.
+  Der Home Assistant Matter Hub ermÃ¶glicht es, Matter-GerÃ¤te Ã¼ber Home Assistant zu steuern.
+  Die App nutzt die offizielle Docker-Implementierung und benÃ¶tigt IPv6 sowie korrektes mDNS-Routing.
   Konfiguriere die Home Assistant URL und ein Long-Lived Access Token in der docker-compose Datei.
 
 developer: t0bst4r
@@ -17,7 +17,7 @@ submitter: Community
 submission: https://github.com/t0bst4r/home-assistant-matter-hub
 repo: https://github.com/t0bst4r/home-assistant-matter-hub
 support: https://github.com/t0bst4r/home-assistant-matter-hub/issues
-icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-community-matter-hub/resources/ha-matter.png?raw=true
+
 gallery:
   - https://raw.githubusercontent.com/t0bst4r/home-assistant-matter-hub/main/docs/screenshot1.png
   - https://raw.githubusercontent.com/t0bst4r/home-assistant-matter-hub/main/docs/screenshot2.png
