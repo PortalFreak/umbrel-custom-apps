@@ -17,7 +17,7 @@ submitter: Community
 submission: https://github.com/t0bst4r/home-assistant-matter-hub
 repo: https://github.com/t0bst4r/home-assistant-matter-hub
 support: https://github.com/t0bst4r/home-assistant-matter-hub/issues
-
+icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-community-matter-hub/resources/ha-matter.png?raw=true
 gallery:
   - https://raw.githubusercontent.com/t0bst4r/home-assistant-matter-hub/main/docs/screenshot1.png
   - https://raw.githubusercontent.com/t0bst4r/home-assistant-matter-hub/main/docs/screenshot2.png
