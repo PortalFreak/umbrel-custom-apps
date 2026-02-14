@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: pf-community-deconz
-name: Community Deconz
+name: Deconz
 tagline: controls a ZigBee network using a Conbee USB
 icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-community-deconz/resources/deconz_icon.jpeg?raw=true
 category: Home & Automation

@@ -1,8 +1,8 @@
 manifestVersion: 1
 id: pf-onedrive
-name: Community OneDrive
+name: OneDrive
 tagline: Sync your Microsoft OneDrive files to your Umbrel
-icon: https://raw.githubusercontent.com/PortalFreak/umbrel-custom-apps/master/pf-community-onedrive/resources/onedrive_icon.png
+icon: https://raw.githubusercontent.com/PortalFreak/umbrel-custom-apps/master/pf-community-onedrive/resources/one-drive-icon.png
 category: Cloud & Storage
 version: "1.0.0"
 port: 8081
@@ -16,8 +16,7 @@ submission: https://hub.docker.com/r/driveone/onedrive
 repo: https://hub.docker.com/r/driveone/onedrive
 support: https://github.com/abraunegg/onedrive/issues
 gallery:
-- https://raw.githubusercontent.com/PortalFreak/umbrel-custom-apps/master/pf-community-onedrive/resources/onedrive_sync.jpg
-- https://raw.githubusercontent.com/PortalFreak/umbrel-custom-apps/master/pf-community-onedrive/resources/onedrive_config.jpg
+- https://raw.githubusercontent.com/PortalFreak/umbrel-custom-apps/master/pf-community-onedrive/resources/onedrive.jpg
 releaseNotes: >-
   Initial release of OneDrive sync client for Umbrel. Supports Personal, Business, and SharePoint accounts.
 dependencies: []
