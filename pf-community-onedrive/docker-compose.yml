@@ -8,5 +8,5 @@ services:
       - ONEDRIVE_UID=1000
       - ONEDRIVE_GID=1000
     volumes:
-      - ${APP_DATA_DIR}/onedrive_conf:/onedrive/conf
+      - ${APP_DATA_DIR}/onedrive_conf:/home/onedrive/.config/onedrive
       - ${UMBREL_ROOT}/home/Documents/XXX:/onedrive/data
