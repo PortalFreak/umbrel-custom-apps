@@ -1,13 +1,19 @@
 manifestVersion: 1
-id: pf-community-onedrive 
+
+id: pf-community-onedrive
 name: OneDrive
 tagline: Sync your Microsoft OneDrive files to your Umbrel
 icon: /resources/onedrive-icon.png
 category: Cloud & Storage
 version: "1.0.0"
 port: 8081
+
 description: >-
-  This Docker image containerizes the OneDrive Linux client, allowing you to synchronize your Microsoft OneDrive (Personal, Business, SharePoint) files directly to your Umbrel device. It supports resumable uploads, dry-run mode, and SharePoint libraries. Ideal for users who want seamless cloud integration with local storage. Authentication is required on first launch.
+  This Docker image containerizes the OneDrive Linux client, allowing you to synchronize
+  your Microsoft OneDrive (Personal, Business, SharePoint) files directly to your Umbrel
+  device. It supports resumable uploads, dry-run mode, and SharePoint libraries. Ideal
+  for users who want seamless cloud integration with local storage. Authentication is
+  required on first launch.
 
 developer: DriveOne
 website: https://github.com/abraunegg/onedrive
@@ -15,11 +21,33 @@ submitter: Community
 submission: https://hub.docker.com/r/driveone/onedrive
 repo: https://hub.docker.com/r/driveone/onedrive
 support: https://github.com/abraunegg/onedrive/issues
+
 gallery:
-- https://raw.githubusercontent.com/PortalFreak/umbrel-custom-apps/master/pf-community-onedrive/resources/onedrive.jpg
+  - https://raw.githubusercontent.com/PortalFreak/umbrel-custom-apps/master/pf-community-onedrive/resources/onedrive.jpg
+
 releaseNotes: >-
-  Initial release of OneDrive sync client for Umbrel. Supports Personal, Business, and SharePoint accounts.
+  Initial release of OneDrive sync client for Umbrel. Supports Personal, Business,
+  and SharePoint accounts.
+
 dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+
+scripts:
+  pre-start: "/scripts/pre-start.sh"
+  post-start: "/scripts/post-start.sh"
+
+status:
+  command: "cat ${APP_DATA_DIR}/onedrive_conf/status 2>/dev/null || echo NO_STATUS"
+  mappings:
+    - value: "NO_TOKEN"
+      status: "error"
+      message: "OneDrive is not authenticated yet. Please perform the interactive authentication as described in the instructions."
+    - value: "OK"
+      status: "running"
+      message: "OneDrive is authenticated and running."
+    - value: "NO_STATUS"
+      status: "starting"
+      message: "Initializing OneDrive configuration..."
+
