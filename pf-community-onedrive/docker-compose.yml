@@ -1,4 +1,4 @@
-version: "3.7"
+version: '3.7'
 services:
   onedrive:
     image: driveone/onedrive:edge
@@ -9,5 +9,5 @@ services:
       - ONEDRIVE_GID=1000
       - ONEDRIVE_DOWNLOADONLY=1
     volumes:
-      - ${APP_DATA_DIR}/onedrive_conf:/home/onedrive/.config/onedrive
+      - ${APP_DATA_DIR}/onedrive_conf:/onedrive/conf
       - ${UMBREL_ROOT}/home/Documents/XXX:/onedrive/data
