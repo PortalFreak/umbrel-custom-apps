@@ -5,10 +5,8 @@ services:
     container_name: onedrive
     restart: unless-stopped
     environment:
-      - PUID=1000
-      - PGID=1000
+      - ONEDRIVE_UID=1000
+      - ONEDRIVE_GID=1000
     volumes:
-      - ${APP_DATA_DIR}/onedrive_conf:/home/onedrive/.config/onedrive
+      - ${APP_DATA_DIR}/onedrive_conf:/onedrive/conf
       - ${UMBREL_ROOT}/home/Documents/XXX:/onedrive/data
-
-

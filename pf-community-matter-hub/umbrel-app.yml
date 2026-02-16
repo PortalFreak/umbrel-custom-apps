@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: pf-community-matter-hub
 name: Matter Hub
-tagline: Matter Bridge fÃ¼r Home Assistant
+tagline: Matter Bridge for Home Assistant
 icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-community-matter-hub/resources/deconz_icon.jpeg?raw=true
 category: Home & Automation
 version: "1.0.0"
