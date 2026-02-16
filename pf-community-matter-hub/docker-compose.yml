@@ -2,13 +2,13 @@ version: "3.7"
 
 services:
   matter-hub:
-    image: ghcr.io/t0bst4r/home-assistant-matter-hub:latest
+    image: ghcr.io/t0bst4r/home-assistant-matter-hub::3.0.4
     container_name: matter-hub
     restart: unless-stopped
     network_mode: host
     environment:
       # >>> Diese beiden Werte MUSST du anpassen <<<
-      - HAMH_HOME_ASSISTANT_URL=http://192.168.178.66:8123/
+      - HAMH_HOME_ASSISTANT_URL=http://192.168.178.66:8123/  
       - HAMH_HOME_ASSISTANT_ACCESS_TOKEN=DEIN_LONG_LIVED_TOKEN
 
       # Optional
