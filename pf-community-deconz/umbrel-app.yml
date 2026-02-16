@@ -2,7 +2,7 @@ manifestVersion: 1
 id: pf-community-deconz
 name: Deconz
 tagline: controls a ZigBee network using a Conbee USB
-icon: https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-community-deconz/resources/deconz_icon.jpeg?raw=true
+icon: resources/deconz-icon.png
 category: Home & Automation
 version: "1.0.0"
 port: 8080
@@ -15,11 +15,15 @@ submitter: Community
 submission: https://hub.docker.com/r/deconzcommunity/deconz
 repo: https://hub.docker.com/r/deconzcommunity/deconz
 support: https://hub.docker.com/r/deconzcommunity/deconz
+
 gallery:
-- https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-community-deconz/resources/deconz_logon.jpg?raw=true
-- https://github.com/PortalFreak/umbrel-custom-apps/blob/master/pf-community-deconz/resources/deconz_hub.jpg?raw=true
+  - resources/deconz-login.png
+  - resources/deconz-hub.png
+  - resources/deconz-schedule.png
+
 releaseNotes: >-
   https://hub.docker.com/r/deconzcommunity/deconz
+
 dependencies: []
 path: ""
 defaultUsername: ""

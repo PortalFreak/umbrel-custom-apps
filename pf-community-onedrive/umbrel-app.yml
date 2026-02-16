@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: pf-onedrive
+id: pf-community-onedrive 
 name: OneDrive
 tagline: Sync your Microsoft OneDrive files to your Umbrel
 icon: https://raw.githubusercontent.com/PortalFreak/umbrel-custom-apps/master/pf-community-onedrive/resources/one-drive-icon.png

@@ -2,9 +2,12 @@ version: "3.7"
 
 services:
   deconz:
-    image: deconzcommunity/deconz:stable
+    image: deconzcommunity/deconz:2.32.5
     container_name: deconz
-    restart: always
+    restart: unless-stopped  # Changed from always
+    cap_add:  # Instead of privileged
+      - SYS_RAWIO
+      - NET_ADMIN
     privileged: true
     network_mode: host
     ports:
@@ -14,10 +17,11 @@ services:
     volumes:
       - ${APP_DATA_DIR}/deconz-data:/opt/deCONZ
     devices:
-      - "/dev/ttyUSB0:/dev/ttyUSB0"
+      - ${DECONZ_DEVICE:-/dev/ttyUSB0}:/dev/ttyUSB0  # Flexible device
     environment:
-      - TZ=Europe/Berlin
+      - TZ=${TZ:-Europe/Berlin}
       - PUID=1000
       - PGID=1000
       - DECONZ_WEB_PORT=80
       - DECONZ_WS_PORT=443
+      - DECONZ_VNC_MODE=1  # Enable VNC by default
